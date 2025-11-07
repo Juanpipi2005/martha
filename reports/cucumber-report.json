@@ -1,0 +1,549 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "portal-del-empleado---colillas-de-pago;consulta-exitosa-de-colillas-de-pago",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Consulta exitosa de colillas de pago",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que abro el portal del empleado",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6694180599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "hago clic en el enlace de Coillas de pago",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 670215999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso el número de documento \"1038867501\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20006521300,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton') to be visible\u001b[22m\n\n    at World.<anonymous> (D:\\OneDrive - IUE\\Desktop\\workspace\\Playwright\\steps\\ejemplo.steps.ts:83:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "acepto el tratamiento de datos",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "marco la casilla No soy un robot",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:96"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "selecciono el periodo de pago \"16/12/2024 - 24/12/2024\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:117"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "debería ver el mensaje de éxito",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:135"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 331487000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "portal-del-empleado---colillas-de-pago;error-por-documento-vacío",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Error por documento vacío",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "que abro el portal del empleado",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6374542499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "hago clic en el enlace de Coillas de pago",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 678623299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "ingreso el número de documento \"\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20003033999,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton') to be visible\u001b[22m\n\n    at World.<anonymous> (D:\\OneDrive - IUE\\Desktop\\workspace\\Playwright\\steps\\ejemplo.steps.ts:83:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "debería ver el mensaje de error \"requerido\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:153"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334421900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "portal-del-empleado---colillas-de-pago;cancelar-después-de-ingresar-documento",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Cancelar después de ingresar documento",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "que abro el portal del empleado",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6556730599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "hago clic en el enlace de Coillas de pago",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 696982799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "ingreso el número de documento \"1038867501\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20005864100,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton') to be visible\u001b[22m\n\n    at World.<anonymous> (D:\\OneDrive - IUE\\Desktop\\workspace\\Playwright\\steps\\ejemplo.steps.ts:83:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "hago clic en el botón \"Cancelar\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:145"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "debería volver a la página principal",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:161"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 321518500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "portal-del-empleado---colillas-de-pago;intentar-confirmar-sin-aceptar-tratamiento-(validación)",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Intentar confirmar sin aceptar tratamiento (validación)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "que abro el portal del empleado",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5713956799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "hago clic en el enlace de Coillas de pago",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 667572499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "ingreso el número de documento \"1038867501\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20013419699,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton') to be visible\u001b[22m\n\n    at World.<anonymous> (D:\\OneDrive - IUE\\Desktop\\workspace\\Playwright\\steps\\ejemplo.steps.ts:83:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "hago clic en el botón \"Confirmar\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:145"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "debería ver el mensaje de error \"requerido\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:153"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 309779299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "portal-del-empleado---colillas-de-pago;aceptar-tratamiento-y-cerrar-modal-informativo",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Aceptar tratamiento y cerrar modal informativo",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "que abro el portal del empleado",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5577572500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "hago clic en el enlace de Coillas de pago",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 673482600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "ingreso el número de documento \"1038867501\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20001589999,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton') to be visible\u001b[22m\n\n    at World.<anonymous> (D:\\OneDrive - IUE\\Desktop\\workspace\\Playwright\\steps\\ejemplo.steps.ts:83:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "acepto el tratamiento de datos",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "hago clic en el botón \"OK\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:145"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "debería ver el mensaje de éxito",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:135"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 330039099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "portal-del-empleado---colillas-de-pago;flujo-alterno:-rechazar-tratamiento",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Flujo alterno: rechazar tratamiento",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "que abro el portal del empleado",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5611289600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "hago clic en el enlace de Coillas de pago",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 675471099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "ingreso el número de documento \"1038867501\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20009635099,
+              "error_message": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('spinbutton') to be visible\u001b[22m\n\n    at World.<anonymous> (D:\\OneDrive - IUE\\Desktop\\workspace\\Playwright\\steps\\ejemplo.steps.ts:83:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "hago clic en el botón \"Cancelar\"",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:145"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "debería volver a la página principal",
+            "match": {
+              "location": "steps\\ejemplo.steps.ts:161"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 322192500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "portal-del-empleado---colillas-de-pago",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Portal del empleado - Colillas de pago",
+    "tags": [],
+    "uri": "features\\ejemplo.feature"
+  }
+]
